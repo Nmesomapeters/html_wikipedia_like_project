@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Encyclopedia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1a0dab;
+    }
+
+    article {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Encyclopedia</h1>
+  </header>
+
+  <nav>
+    <a href="#entry">Entry</a>
+    <a href="#index">Index</a>
+    <a href="#search">Search</a>
+    <a href="#new">New Page</a>
+    <a href="#edit">Edit Page</a>
+    <a href="#random">Random Page</a>
+  </nav>
+
+  <article id="entry">
+    <h2>Entry Page</h2>
+    <p>This is the content of the entry page. Replace this with the actual content.</p>
+  </article>
+
+  <article id="index">
+    <h2>Index Page</h2>
+    <p>This is the content of the index page. Replace this with the actual content.</p>
+  </article>
+
+  <article id="search">
+    <h2>Search</h2>
+    <input type="text" placeholder="Enter search query">
+    <button onclick="search()">Search</button>
+    <div id="searchResult"></div>
+  </article>
+
+  <article id="new">
+    <h2>New Page</h2>
+    <textarea placeholder="Enter new page content"></textarea>
+    <button onclick="savePage()">Save Page</button>
+  </article>
+
+  <article id="edit">
+    <h2>Edit Page</h2>
+    <textarea placeholder="Edit page content"></textarea>
+    <button onclick="updatePage()">Update Page</button>
+  </article>
+
+  <article id="random">
+    <h2>Random Page</h2>
+    <p>Redirect to a randomly selected page.</p>
+    <button onclick="redirectToRandomPage()">Go to Random Page</button>
+  </article>
+
+  <script>
+    function search() {
+      // Implement search functionality
+      document.getElementById("searchResult").innerHTML = "Search results will be displayed here.";
+    }
+
+    function savePage() {
+      // Implement saving new page functionality
+      alert("New page saved!");
+    }
+
+    function updatePage() {
+      // Implement updating page functionality
+      alert("Page updated!");
+    }
+
+    function redirectToRandomPage() {
+      // Implement redirecting to a random page functionality
+      alert("Redirecting to a random page!");
+    }
+  </script>
+
+</body>
+</html>
