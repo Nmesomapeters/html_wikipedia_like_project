@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entry Page</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1 {
+            font-family: serif;
+        }
+        h2 {
+            font-family: Courier;
+        }
+        .center {
+                display:flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                margin-top: 100px;
+        }
+         input.search {
+        width: 260px;
+        border: 1px solid #555;
+        display: flex;
+        padding: 9px 4px 9px 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        background: transparent url("/assets/search.svg") no-repeat 13px;
+        } 
+    .inline{
+            max-width:400px;
+            margin:auto;
+            margin-top: 50px;
+            margin-right: auto;
+        }
+        .input-icons i {
+            position: absolute;
+            
+        }
+          
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+            
+        }
+          
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+           
+        }
+          
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: right;
+            margin-bottom: 3px;
+        }
+        .fa-search icon{
+            position:absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Wikipedia</h1>
+    <h2 style="text-align: center;"><small>The Free Encyclopedia</small></h2>
+    <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="wikipedia logo" class="center">
+        <!-- Entry content goes here -->
+    
+        <form class="inline">
+            <div class="input-icons">
+                <i class="fa fa-search icon"></i>
+                <input class="input-field" type="text">
+
+        
+    </div>
+    </form>
+</body>
+</html>
